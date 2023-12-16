@@ -34,7 +34,7 @@
 
    **2. 데이터 셋 준비**
    
-     파이썬 환경에서 직접 돌리실 경우에는 MUSDB 데이터 셋을 직접 다운 받으셔야 합니다.
+     파이참 환경에서 직접 돌리실 경우에는 MUSDB 데이터 셋을 직접 다운 받으셔야 합니다.
 
      링크: <https://sigsep.github.io/datasets/musdb.html#musdb18-hq-uncompressed-wav>  
 
