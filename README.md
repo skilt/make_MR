@@ -3,6 +3,37 @@
  :point_down: 아래의 링크를 통해서도 확인해 보실 수 있습니다.  :point_down:
 <https://colab.research.google.com/drive/1BVUSpwbAO8pg8J2EUVFQnBRa1XX7T-Nb?authuser=1#scrollTo=8agQ2-sB6ro6>
 
+## 파일 설명
+#### **1. model 폴더** :file_folder:
+model 폴더에는 사전에 학습하여 저장된 model들이 들어 있습니다.
+ - ##### model_mk1: MR을 직접 예측하여 추출하는 모델입니다.
+ - ##### model_mk2: 음악의 vocal을 예측하여 추출하는 모델입니다.
+
+#### **2. log 폴더**  :file_folder:
+log 폴더에는 사전에 학습한 model들의 훈련과정이 저장된 log 파일이 들어있습니다.
+ - ##### model_mk1_log: model_mk1의 log 파일입니다.
+ - ##### model_mk2_log: model_mk2의 log 파일입니다.
+
+#### **3. result 폴더**  :file_folder:
+result 폴더에는 사전에 테스트한 모델별 결과가 .wav 파일로 들어있습니다.
+
+#### **4. removed_vocal_make.py**  
+Train 데이터로 사용할 MR 데이터를 생성하는 코드입니다.
+
+#### **5. view_spectrogram.py**  
+MUSDB에 있는 파일들 스펙트로그램을 확인하는 코드입니다.
+
+#### **6. main.py**  
+모델 훈련을 수행하는 코드입니다.
+
+#### **7. mk1_predict.py**  
+MR을 직접 예측하는 model_mk1의 모델 테스트 코드입니다.
+
+#### **8. mk2_predict.py**  
+vocal을 예측하는 mode1_mk2의 모델 테스트 코드입니다.
+
+------
+
 ## 실행 방법
  - ### **colaboratory**
      상단의 링크를 통해서 colab에서도 동작할 수 있도록 하였습니다. 저장된 MUSDB의 경로에 유의하여 순서대로 진행해 주시면 됩니다.  
@@ -36,7 +67,7 @@
    
      파이참 환경에서 직접 돌리실 경우에는 MUSDB 데이터 셋을 직접 다운 받으셔야 합니다.
 
-     링크: <https://sigsep.github.io/datasets/musdb.html#musdb18-hq-uncompressed-wav>  
+     🔗링크: <https://sigsep.github.io/datasets/musdb.html#musdb18-hq-uncompressed-wav>  
 
      ![image](https://github.com/skilt/make_MR/assets/114862463/43c908ab-017f-495f-a77d-79f7b98bc971)
 
